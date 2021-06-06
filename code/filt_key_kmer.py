@@ -16,7 +16,7 @@ def seq2kmer(K,sequence):
     return kmer_mat
 
 def get_args():
-    parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
+    parser = argparse.ArgumentParser(description='Motif analysis')
     parser.add_argument('--attention_weight_path', type=str, default='./data/seq/',
                         help='positive data set path')
     parser.add_argument('--fasta_path', type=str, default='./data/tf/',
