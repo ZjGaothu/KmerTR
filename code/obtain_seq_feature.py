@@ -13,7 +13,7 @@ import model as model
 from model import TransformerModel
 
 def get_args():
-    parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
+    parser = argparse.ArgumentParser(description='Obtain sequence feature')
     parser.add_argument('--data', type=str, default='./data/DNA',
                         help='location of the data corpus')
     parser.add_argument('--model', type=str, default='./model/model_K5_256.pt',
