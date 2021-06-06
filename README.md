@@ -32,3 +32,13 @@ $ conda install pytorch torchvision torchaudio cudatoolkit=X.X -c pytorch
 $ git clone https://github.com/ZjGaothu/KmerTR.git   
 $ cd KmerTR
 ```
+## Data Preprocessing
+
+### Load the genome files:
+```  
+$ cd ..
+$ mkdir hg19 && cd hg19
+$ nohup wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
+$ tar zvfx chromFa.tar.gz 
+$ cd ../../..
+```
