@@ -102,7 +102,9 @@ for cv in range(1,folds):
     yscore=bst.predict(dtest)
     yscore = np.array(yscore)
     print( cv,cell,' finished')
+    # save result
     np.save(seq_data_path + "results/predict_%s_cv%s.npy"%(cell,cv),yscore)
+    bst.save_model('./model/xgb_4_cv%s.bin'%cv)
 
 
 
