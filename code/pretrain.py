@@ -16,7 +16,7 @@ os.environ['CUDA_VISIBLE_DEVICES']='3'
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
+    parser = argparse.ArgumentParser(description='Pretrain transformer Model')
     parser.add_argument('--data', type=str, default='./data/DNA',
                         help='location of the data corpus')
     parser.add_argument('--emsize', type=int, default=256,
