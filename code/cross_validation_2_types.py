@@ -7,7 +7,7 @@ import argparse
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
+    parser = argparse.ArgumentParser(description='Cross validation')
     parser.add_argument('--seq_pos', type=str, default='./data/pos_seq.npy',
                         help='positive data set path')
     parser.add_argument('--seq_neg', type=str, default='./data/neg_seq.npy',
