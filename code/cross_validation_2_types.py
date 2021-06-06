@@ -114,6 +114,7 @@ for cv in range(1,folds):
     yscore = np.array(yscore)
     # save result
     np.save(save_path + 'cross_validation_cv%s.npy'%cv,yscore)
+    bst.save_model('./model/xgb_2_cv%s.bin'%cv)
 
 
 
